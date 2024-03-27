@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- for icons of bootstrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- <button class="btn">Click me</button>
+    <button class="btn btn-danger">Click me</button>
+    <button class="btn btn-success">Click me</button> -->
+
+    <!-- container -->
+
+    <div class="container">
+        <h1>Bootstrap</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+            tempora, in reiciendis ex sapiente, temporibus id animi nam
+            quaerat assumenda distinctio quos esse quo. Corrupti error
+            veritatis eum perferendis totam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, veniam. Nam,
+            blanditiis repellat, atque tempora magnam eius voluptatibus sequi recusandae iure odio autem molestias iste,
+            possimus asperiores saepe rem debitis.</p>
+
+        <!-- buttons -->
+
+
+        <button class="btn">help</button>
+        <button class="btn btn-primary">help</button>
+        <!-- to display button as link -->
+        <button class="btn btn-link">help</button>
+
+        <!-- to display link as button -->
+        <a href="https://google.com" class="btn btn-success">Go to Google</a>
+        <button class="btn btn-outline-warning">Click me</button>
+        <button class="btn btn-dark">Click me</button>
+        <br>
+        <br>
+
+        <!-- badges -->
+
+        <span class="badge bg-danger">10+</span>
+        <button class="btn btn-danger">Notifications <span class="badge bg-secondary">4</span></button>
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+          <br>
+          <br>
+          <!-- alert -->
+          <div class="alert alert-danger">Download Failed! Pleae try again</div>
+          <div class="alert alert-success">Congratulations! Your score is 50/50</div>
+          <div id="liveAlertPlaceholder"></div>
+        <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button>
+
+        <!-- this copied from chatgpt -->
+        <div class="alert alert-danger">
+            <i class="bi bi-exclamation-circle fs-4"></i>
+            This is a danger alert.
+          </div>
+    </div>
+    <div class="alert alert-warning alert-dismissible">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+      </div>
+  
+      <!-- button group -->
+      <div class="btn-group">
+        <button class="btn btn-primary">one</button>
+        <button class="btn btn-outline-danger">two</button>
+        <button class="btn btn-secondary">three</button>
+      </div>
+      <div class="btn-group">
+        <input type="radio" class="btn-check" name="btnradio" id="btn1">
+        <label for="btn1" class="btn btn-outline-success">Checkbox1</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btn2">
+        <label for="btn2" class="btn btn-outline-success">Checkbox2</label>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

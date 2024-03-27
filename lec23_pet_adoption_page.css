@@ -1,0 +1,31 @@
+h2{
+    color: rgb(238, 157, 6);
+}
+span{
+    color:rgb(161, 134, 36) ;
+}
+#pets{
+    display: flex;
+    justify-content: space-evenly;
+} 
+.card{
+    width:400px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius:25px ;
+    margin: 10px;
+}
+img{
+    width:100%;
+    height:200px;
+    border-radius: 25px;
+}
+h4{
+    text-align: right;
+    color:#3c787e;
+}
+@media(max-width:376px){
+    #pets{
+       flex-wrap: wrap;  /* we want items start from new line if width is getting reduce so wrap items onto multiple lines */
+    }
+}

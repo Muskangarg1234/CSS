@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+    font-weight: normal; /* h1 bold ko bhi normal kr dega */
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-style: double;
+    letter-spacing: 5px;
+    font-family: avant garde,didot,sans-serif;
+} 
+h2{
+    text-align: end;
+    font-weight: 200;
+    text-decoration: line-through;
+    text-decoration-color: rgb(60, 71, 71);
+    text-decoration-style: wavy;
+}
+h3{
+    font-weight: 600;
+    text-decoration: red wavy overline;
+}
+h5{
+    font-weight: bolder;
+    text-decoration: dotted pink underline;
+}
+p{
+    text-align:justify; 
+    font-weight: bold; /*paragraph bold ho jayega*/
+    line-height: 2;
+    font-size: 20px;
+}
+a{
+    text-decoration: none; /* remive underline from anchor tag link */
+}

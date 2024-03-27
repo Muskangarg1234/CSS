@@ -1,0 +1,20 @@
+*{
+    font-family:Courier New;
+}
+h1{
+    color:#1b74e4;
+}
+
+#searchbtn{
+    background-color: black;
+    color: white;
+}
+
+.userbtn{
+    background-color: aqua;
+}
+
+/* we can also use id selector to give styling multiple id hai so comma separated hogi */
+/* #login, #register{
+    background-color: aqua;
+} */

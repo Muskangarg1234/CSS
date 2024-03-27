@@ -1,0 +1,181 @@
+
+/* Universal selector */
+
+*{
+    font-family:sans-serif;
+    background-color: bisque;
+}
+
+/* Element selector */
+h1,h3{
+    color: rgb(185, 43, 39);
+}
+ 
+/* for id selector first write # and then write id name */
+#login{
+    background-color: aquamarine;
+    color: brown;
+}
+
+#signup{
+    background-color: rgb(185, 43, 39);
+    color: white;
+}
+
+/* Class selector */
+.upvote{
+    background-color: darkslategray;
+    color: azure;
+}
+
+
+/* Descendant selector */
+
+/*sab p mein jo anchor tag a hai vaha style apply krna hai*/
+/* p a{ 
+    color: rgb(144, 30, 30);
+    background-color: rgb(175, 175, 211);
+} */
+
+/* .follow{
+    color: rgb(144, 30, 30);
+    background-color: rgb(152, 152, 223);
+} */
+
+.que a{
+    color: rgb(144, 30, 30);
+    background-color: rgb(236, 228, 217);
+}
+/* 4 levels of descendant selector*/
+nav ul li a{
+    color: deeppink;
+}
+
+/* this is also valid */
+
+/* nav a{
+    color: deeppink;
+} */
+
+/* adjacent sibling combinator */
+p+h3{
+    /* p ke baad jo bhi h3 hai vaha style apply kr do */
+    text-decoration: underline;
+}
+.upvote+button{
+    background-color: darkcyan;
+    color: white;
+}
+
+/* child combinator */
+div>input{
+    background-color: rgb(151, 180, 233);
+}
+
+/* nav ka child ul ul ka child li li ka child a */
+nav>ul>li>a{
+    color: deeppink;
+}
+/* nav>a not valid */
+ 
+/*Attribute selector */
+input[type="text"]{
+    color: darkgreen;
+}
+input[type="password"]{
+    color:coral
+}
+
+input[type]{
+    background-color: beige;
+    border-color: black;
+}
+
+/* if class attribute value in anchor tag is prefixed(started) from hii then apply style */
+/* a[class^="hii"]{
+    text-decoration: none;
+} */
+
+/* if class attribute value in anchor tag is ending 1 then apply style */
+/* hii1 is ending 1 so apply style to home only*/
+/* a[class$="1"]{
+    text-decoration: none;
+} */
+
+a[class*="i"]{
+    text-decoration: none;
+}
+
+
+
+/* hover pseudo class */
+button:hover{
+    background-color:rgb(161, 222, 161);
+    color: black;
+}
+h3:hover{
+    /* jb h3 per hover kre then underline remove ho jaye*/
+    text-decoration: none;
+}
+
+/* active pseudo class */
+button:active{
+    background-color: rgb(220, 154, 154);
+}
+a:active{
+    color:cadetblue;
+}
+/* checked pseudo class */
+input[type="radio"]:checked + label{
+    color:red;
+    font-weight: bold;
+}
+input[type="checkbox"]:checked+label{
+    color:brown;
+    font-weight: bold;
+}
+
+/* nth-of-type pseudo class */
+/* 2nd li mein jo anchor tag hai uska color change krna hai*/
+/* li:nth-of-type(2) a{
+    color:rgb(49, 57, 57);
+} */
+
+li:nth-of-type(2n+1) a{
+    /* sabhi odd valo ka color change hoga*/
+    color:rgb(49, 57, 57)
+}
+p:nth-of-type(3n){
+    background-color:brown;
+}
+
+/* Pseudo elements*/
+
+/*  ::first-letter  */
+h1::first-letter{
+    color:rgb(55, 59, 59);
+    font-weight: bold;
+}
+
+/*  ::first-line  */
+div p::first-line{
+    color: rgb(219, 102, 18);
+}
+
+/* selection*/
+div p::selection{
+   background-color:chartreuse;
+}
+h3{
+    background-color: rgb(180, 20, 20) !important;
+    /* now this property will not change even by cascading or inline style */
+}
+
+/*cascading*/
+h3{
+    color:rgb(11, 147, 102);
+    background-color: black;
+}
+h3{
+    background-color: rgb(137, 29, 29);
+}

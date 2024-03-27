@@ -1,0 +1,15 @@
+div{
+    background-color: aquamarine;
+}
+form{
+    background-color: cornflowerblue;
+}
+
+/* input and button by default do not inherit background color */
+
+input{
+    background-color: inherit;
+}
+button{
+    background-color: inherit;
+}

@@ -1,0 +1,44 @@
+.position{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(251, 0, 42);
+    display: inline-block;
+}
+section{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(251, 0, 42);
+    display: inline-block;
+    position:absolute;
+}
+#static{
+    background-color: aquamarine;
+    position: static;
+    top:100px;
+    left: 100px;
+    /* no change bcoz position is static*/
+}
+#relative{
+    background-color: aquamarine;
+    position: relative;
+    bottom:150px;
+    left: 200px;
+}
+#absolute{
+    background-color: aquamarine;
+    position: absolute;
+    bottom:150px;
+    left: 200px;
+    /* absolute has direct parent section and section has position 
+    so it is positioned with respect to section*/
+}
+#fixed{
+    background-color: aquamarine;
+    position: fixed;
+    /* used when we make chat option in website at down of webpage*/
+    top:100px;
+    left: 200px;
+}
+body{
+    height: 1800px;
+}

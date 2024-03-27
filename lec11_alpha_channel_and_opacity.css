@@ -1,0 +1,15 @@
+div{
+    height:200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0.5);
+    /* only color will be translucent */
+    /* if alpha =0 then only color will be invisible */
+}
+p{
+    height: 200px;
+    width: 200px;
+    background-color: burlywood;
+    opacity: 0.5;
+    /* all things(i.e. text,color,button etc.) will be translucent*/
+    /* if opacity=0 then all things will be invisible */
+}

@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+    height: 100vh;
+}
+body{
+    background-image: url("ca.avif");
+    background-size: cover;
+}
+.btn_one{ 
+    font-size: 30px;
+    position: absolute;
+    left:16px;
+    line-height: 60px;
+}
+.sidebar_menu{
+    position: fixed; /* bcoz jese hm screen scroll kre then sidebar bhi shift ho*/
+    left:-300px;
+     /*    - is used so that voh eft mein i.e screen ka bahar hi chala jaye*/
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255,0.1); /* black ke upar thoda transparent sa white dena*/
+    box-shadow: 0 0 6px rgb a(255,255,255,0.8);
+    transition: 0.3s linear; /* so that when menu bar opens then linear transition happens*/
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 0 4px rgba(255,255,255,0.8);
+}
+.logo a{
+    color: white;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500; /* to add some boldness */
+}
+.menu{
+    position: absolute;
+    width:100%;
+    top: 80px;
+}
+.btn_two{
+    color: grey;
+    font-size: 25px;
+    position:absolute;
+    left:260px;
+    line-height: 60px;
+    /* opacity: 0;   */
+    /* so that abhi element disappear ho jaye */
+}
+li{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 15px 20px;
+}
+li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.social_media{
+    position: absolute;
+    top: 740px;
+    left:80px;
+}
+
+.social_media i{
+    color: white;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+#check{
+      /* we want checkbox to disappear */
+    /* opacity: 0;  */ 
+    /* with opacity=0 only element remove but space of that element is put as it is*/
+     
+    display: none;
+    /* now element remove from screen and space occupied by it also disppears */
+}
+
+ul li:hover{
+    box-shadow: 0 0 4px rgba(255,255,255,0.8);
+}
+
+.btn_two i{
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+.btn_one i{
+    cursor: pointer;
+    /* transition: all 0.3s linear; */
+    transition: 0.1s linear;
+}
+
+.btn_one i:hover{
+    font-size: 35px; /* this change not appears now bcoz this icon is behind sidebar */
+}
+.btn_two i:hover{
+    font-size: 30px; /* when we hover on icon then size of icon increases*/
+}
+.social_media i:hover{
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/*   ~ is used for general(i.e any) sibling of that element */
+input[type="checkbox"]:checked ~ .sidebar_menu{
+    left:0px;
+}
+/* input[type="checkbox"]:checked + .btn_one + .sidebar_menu{
+    left:0px;
+} */
+
+/* now if we click on menu bar then menu bar disppears */
+#check:checked + .btn_one i{
+    opacity: 0;
+}

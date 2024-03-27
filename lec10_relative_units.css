@@ -1,0 +1,46 @@
+h1{
+    border:2px solid black;
+    width:50%;
+}
+#outer{
+    height:200px;
+    width:700px;
+    background-color: pink;
+    margin:40px;
+
+}
+#inner{
+    height: 50%; /* 50% of height of parent i.e. outer div*/
+    width: 80px;
+    background-color: cadetblue;
+    margin:10%;  /* 10% of width of parent i.e outer div*/
+}
+h2{
+    font-size: 15px;
+}
+
+p{
+    font-size: 2em;  /* double of font size of its parent i.e h2*/
+    width:5em; /* 5 times of font size of itself*/
+    height: 3em; /* 3 times of font size of itself */
+    border: 2px solid black;
+}
+button{
+    font-size: 20px;
+    width:150px;
+    height:100px;
+    border-radius: 20px;
+    padding:0.5em; /* 1/2 times of font size of itself*/
+}
+
+section{
+    font-size: 200px;
+}
+html{/*html is main root element*/
+    font-size: 32px;  
+}
+div{
+    /*font-size: 0.5em;  /* 0.5 times of font size of direct parent*/
+    font-size: 2rem;/* 2 times of font size of root element i.e html which is 
+                     of 16px font size by default but we change here it to 32 px */
+} 

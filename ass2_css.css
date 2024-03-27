@@ -1,0 +1,38 @@
+#mainTopic{
+    color: blue;
+}
+*{
+    text-align: center;
+}
+.heading{
+    font-family: Georgia;
+}
+.paragraph{
+    color: white;
+    background-color: cornflowerblue;
+}
+div button{
+    color: azure;
+    background-color: purple;
+}
+button:hover{
+    background-color: yellow;
+    color: blue;
+}
+p:nth-of-type(2n+1){
+    color:yellow;
+}
+h1::first-letter{
+    color: red;
+}
+input[type="checkbox"]:checked+label{
+    color:darkgreen;
+}
+
+/*   
+h1->001
+#maincontent-> 100
+.main-> 010
+div.main-> 011
+order of specifity: h1<.main<div.main<#maincontent
+*/

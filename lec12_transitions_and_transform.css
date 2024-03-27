@@ -1,0 +1,48 @@
+div{
+    height:100px;
+    width:100px;
+    background-color: pink;
+    /* margin: 0 auto; (for center) */
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+div:hover{
+    width: 400px;
+}
+button{
+    height:50px;
+    width:100px;
+    margin-top:10px;
+    border-radius: 10px;
+    background-color: cadetblue;
+    font-size: 20px;
+    transition:background-color 2s ease-in-out 1s;
+}
+button:hover{
+    background-color: burlywood;
+}
+p{
+    height: 50px;
+    width: 200px;
+    background-color: crimson;
+    margin:10px auto;
+}
+#one{
+    transform:rotate(45deg);
+}
+#two{
+    transform: scale(0.5);  /* abhi size original size ke half ho jayega */
+}
+#three{
+    transform: scale(2,0.5); /* scale 2 times in x direction and 0.5 times in y direction */
+    transform: translate(200px,-300px);   /* 200px in right and 300px upwards*/
+}
+#four{
+    transform: skew(30deg);
+}
+#five{
+    transform: rotate(30deg) translate(250px) scale(1.5);
+}
+#six{
+    transform: matrix(1,0,10,1,0,0);
+}

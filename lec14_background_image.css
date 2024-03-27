@@ -1,0 +1,9 @@
+div{
+    height: 500px;
+    width: 1000px;
+    margin:100px auto;
+    background-color:pink;
+    background-image: url("bgimage.jpeg");
+    background-size:cover;
+    font-size: 100px;
+}

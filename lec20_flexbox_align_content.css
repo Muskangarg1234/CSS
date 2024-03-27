@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+}
+.container{
+    height: 600px;
+    width: 80%;
+    background-color: black;
+    margin:10px auto;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    /* align-content:center; */
+    /* align-content: baseline; */
+    /* align-content: space-evenly; */
+    align-content: flex-start;
+}
+#org{
+    /* align-self:center; */
+    align-self:flex-start;
+    order:-1;
+    /* flex-basis:80px ; */
+}
+#vio{
+    /* align-self: flex-end; */
+    align-self:flex-start;
+    order:9; /* order is maximum so last mein ayega*/
+    /* flex-grow: 1; */
+    /* flex-shrink: 2; */
+}
+#yellow{
+    /* flex-grow: 0.5;
+    max-width: 100px; */
+    order:8;
+    flex-shrink: 3;
+}
+div{
+    height: 300px;
+    width:20%;
+}
